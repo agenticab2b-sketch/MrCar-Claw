@@ -1,0 +1,243 @@
+{
+  "hosting": {
+    "public": ".",
+    "cleanUrls": true,
+    "trailingSlash": false,
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**",
+      "optimize.py",
+      "README.md",
+      "GEMINI.md",
+      "implementation_plan.md.resolved",
+      "functions/**"
+    ],
+    "headers": [
+      {
+        "source": "/fonts/**",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=31536000, immutable"
+          }
+        ]
+      },
+      {
+        "source": "/video/**",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=31536000, immutable"
+          }
+        ]
+      },
+      {
+        "source": "/**/*.@(webp|avif|jpg|jpeg|png|gif|ico|svg)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=31536000, immutable"
+          }
+        ]
+      },
+      {
+        "source": "/**/*.@(woff|woff2|ttf|otf|eot)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=31536000, immutable"
+          }
+        ]
+      },
+      {
+        "source": "/**/*.@(css|js)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=31536000, immutable"
+          }
+        ]
+      },
+      {
+        "source": "/**/*.@(html)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=300, must-revalidate"
+          }
+        ]
+      }
+    ],
+    "redirects": [
+      {
+        "source": "/homepage.html",
+        "destination": "/ru/",
+        "type": 301
+      },
+      {
+        "source": "/teenused.html",
+        "destination": "/teenused",
+        "type": 301
+      },
+      {
+        "source": "/prices",
+        "destination": "/hinnad",
+        "type": 301
+      },
+      {
+        "source": "/prices.html",
+        "destination": "/hinnad",
+        "type": 301
+      },
+      {
+        "source": "/ru/prices",
+        "destination": "/ru/tseny",
+        "type": 301
+      },
+      {
+        "source": "/ru/prices.html",
+        "destination": "/ru/tseny",
+        "type": 301
+      },
+      {
+        "source": "/en/prices.html",
+        "destination": "/en/prices",
+        "type": 301
+      },
+      {
+        "source": "/privaatsuspoliitika",
+        "destination": "/privaatsus",
+        "type": 301
+      },
+      {
+        "source": "/galerii.html",
+        "destination": "/galerii",
+        "type": 301
+      },
+      {
+        "source": "/hinnad.html",
+        "destination": "/hinnad",
+        "type": 301
+      },
+      {
+        "source": "/tingimused.html",
+        "destination": "/tingimused",
+        "type": 301
+      },
+      {
+        "source": "/en/tingimused.html",
+        "destination": "/en/tingimused",
+        "type": 301
+      },
+      {
+        "source": "/ru/tingimused.html",
+        "destination": "/ru/tingimused",
+        "type": 301
+      },
+      {
+        "source": "/ru/uslugi.html",
+        "destination": "/ru/uslugi",
+        "type": 301
+      },
+      {
+        "source": "/ru/galereya.html",
+        "destination": "/ru/galereya",
+        "type": 301
+      },
+      {
+        "source": "/en/gallery.html",
+        "destination": "/en/gallery",
+        "type": 301
+      },
+      {
+        "source": "/ru/contact",
+        "destination": "/ru/kontakt",
+        "type": 301
+      },
+      {
+        "source": "/ru/contact.html",
+        "destination": "/ru/kontakt",
+        "type": 301
+      },
+      {
+        "source": "/jata-paring",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/silindripea-remont",
+        "destination": "/services/mootoriremont",
+        "type": 301
+      },
+      {
+        "source": "/teenused/kaubiku-remont-hooldus-koplis",
+        "destination": "/services/autoremont",
+        "type": 301
+      },
+      {
+        "source": "/teenused/autoremont-hooldus-koplis",
+        "destination": "/services/autoremont",
+        "type": 301
+      },
+      {
+        "source": "/teenused/mootori-diagnostika",
+        "destination": "/services/hooldus-diagnostika",
+        "type": 301
+      },
+      {
+        "source": "/teenused/mootori-remont-ja-vahetus",
+        "destination": "/services/mootoriremont",
+        "type": 301
+      },
+      {
+        "source": "/teenused/mootori-ja-kaigukasti-remont",
+        "destination": "/services/mootoriremont",
+        "type": 301
+      },
+      {
+        "source": "/services/webasto-remont",
+        "destination": "/services/webasto-diagnostika",
+        "type": 301
+      },
+      {
+        "source": "/teenused/webasto-remont",
+        "destination": "/services/webasto-diagnostika",
+        "type": 301
+      },
+      {
+        "source": "/teenused/webasto-remont/webasto-vead-ja-symptomid",
+        "destination": "/services/webasto-sumptomid",
+        "type": 301
+      }
+    ],
+    "rewrites": [
+      {
+        "source": "/api/lead",
+        "function": "lead"
+      },
+      {
+        "source": "/api/google-rating",
+        "function": "getGoogleRating"
+      },
+      {
+        "source": "/robots.txt",
+        "function": "robots"
+      }
+    ]
+  },
+  "functions": [
+    {
+      "source": "functions",
+      "codebase": "default",
+      "disallowLegacyRuntimeConfig": true,
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log",
+        "*.local"
+      ]
+    }
+  ]
+}

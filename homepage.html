@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="et">
+
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-W48VVTPC');</script>
+    <!-- End Google Tag Manager -->
+    <!-- Global Noindex for Non-Canonical Hosts -->
+    <script>
+        (function () {
+            var host = window.location.hostname;
+            if (host !== 'www.mrcar.ee' && host !== 'mrcar.ee' && !host.includes('localhost') && !host.includes('127.0.0.1')) {
+                var meta = document.createElement('meta');
+                meta.name = 'robots';
+                meta.content = 'noindex, nofollow';
+                document.head.appendChild(meta);
+            }
+        })();
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Mr.Car Autoremont Tallinn — professionaalne autoremont, rehvivahetus ja diagnostika Koplis. Helista +372 5646 1210">
+    <title>Mr.Car Autoremont Tallinn — Professionaalne Autohooldus</title>
+    <link rel="stylesheet" href="/style.css?v=3">
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W48VVTPC" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- ========================================
+       1. NAVBAR
+       ======================================== -->
+    <header class="navbar" id="navbar">
+        <a href="/" class="navbar__logo">Mr.Car</a>
+        <nav class="navbar__nav">
+            <div class="navbar__item has-dropdown">
+                <a href="/teenused" class="navbar__link">[01] Teenused</a>
+                <div class="mega-menu">
+                    <a href="/services/autoremont" class="mega-menu__item">
+                        <iconify-icon icon="mdi:wrench" width="20" height="20" aria-hidden="true"></iconify-icon>
+                        <span>Autoremont</span>
+                    </a>
+                    <a href="/services/summutid-keevitus" class="mega-menu__item">
+                        <iconify-icon icon="mdi:fire" width="20" height="20" aria-hidden="true"></iconify-icon>
+                        <span>Summuti ja Keevitustööd</span>
+                    </a>
+                    <a href="/services/veermik-pidurid" class="mega-menu__item">
+                        <iconify-icon icon="mdi:car-brake-alert" width="20" height="20"
+                            aria-hidden="true"></iconify-icon>
+                        <span>Veermiku ja Pidurite remont</span>
+                    </a>
+                    <a href="/services/rehvitood" class="mega-menu__item">
+                        <iconify-icon icon="mdi:tire" width="20" height="20" aria-hidden="true"></iconify-icon>
+                        <span>Rehvitööd</span>
+                    </a>
+                    <a href="/services/hooldus-diagnostika" class="mega-menu__item">
+                        <iconify-icon icon="mdi:car-cog" width="20" height="20" aria-hidden="true"></iconify-icon>
+                        <span>Hooldus ja Diagnostika</span>
+                    </a>
+                    <a href="/services/kaigukastiremont" class="mega-menu__item">
+                        <iconify-icon icon="mdi:car-shift-pattern" width="20" height="20"
+                            aria-hidden="true"></iconify-icon>
+                        <span>Käigukasti tööd</span>
+                    </a>
+                    <a href="/services/elektritood" class="mega-menu__item">
+                        <iconify-icon icon="mdi:lightning-bolt" width="20" height="20"
+                            aria-hidden="true"></iconify-icon>
+                        <span>Elektritööd</span>
+                    </a>
+                    <a href="/services/mootoriremont" class="mega-menu__item">
+                        <iconify-icon icon="mdi:engine" width="20" height="20" aria-hidden="true"></iconify-icon>
+                        <span>Mootori tööd</span>
+                    </a>
+                    <a href="/services/olivahetus" class="mega-menu__item">
+                        <iconify-icon icon="mdi:oil" width="20" height="20" aria-hidden="true"></iconify-icon>
+                        <span>Õli ja Filtrite vahetus</span>
+                    </a>
+                    <a href="/services/ostueelne-kontroll" class="mega-menu__item">
+                        <iconify-icon icon="mdi:file-search-outline" width="20" height="20"
+                            aria-hidden="true"></iconify-icon>
+                        <span>Enne Ostu Kontroll</span>
+                    </a>
+                    <a href="/services/kliimahooldus" class="mega-menu__item">
+                        <iconify-icon icon="mdi:snowflake" width="20" height="20" aria-hidden="true"></iconify-icon>
+                        <span>Kliima ja Konditsioneer</span>
+                    </a>
+                    <a href="/services/webasto-diagnostika" class="mega-menu__item">
+                        <iconify-icon icon="mdi:radiator" width="20" height="20" aria-hidden="true"></iconify-icon>
+                        <span>Webasto remont</span>
+                    </a>
+                </div>
+            </div>
+
+            <a href="/meist" class="navbar__link">[02] Meist</a>
+            <a href="/hinnad" class="navbar__link">[03] Hinnad</a>
+            <a href="/kontakt" class="navbar__link">[04] Kontakt</a>
+            <a href="/galerii" class="navbar__link">[05] Galerii</a>
+            <a href="tel:+37256461210" class="navbar__phone">5646 1210</a>
+        </nav>
+        <div class="navbar__cta">
+            <a href="/kontakt" class="btn btn-primary">Jäta päring</a>
+        </div>
+        <button class="navbar__burger" id="burgerBtn" aria-label="Open menu">
+            <span></span><span></span><span></span>
+        </button>
+        <div class="navbar__lang desktop-only">
+            <a href="/" class="lang-link active" title="Eesti keel">
+                <iconify-icon icon="circle-flags:ee" width="24" height="24"></iconify-icon>
+            </a>
+            <a href="/ru" class="lang-link" title="Русский язык">
+                <iconify-icon icon="circle-flags:ru" width="24" height="24"></iconify-icon>
+            </a>
+            <a href="/en" class="lang-link" title="English">
+                <iconify-icon icon="circle-flags:en" width="24" height="24"></iconify-icon>
+            </a>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Navigatsioon">
+        <button class="mobile-menu__close" id="closeMenu" aria-label="Close menu">&times;</button>
+        <nav aria-label="Mobiilne navigatsioon">
+            <a href="/teenused" class="mobile-menu__link" onclick="toggleMobileMegaMenu(event)">
+                Teenused
+                <iconify-icon icon="mdi:chevron-down" class="mobile-menu__toggle-icon" width="24"
+                    height="24"></iconify-icon>
+            </a>
+            <div class="mobile-mega-menu" id="mobileMegaMenu">
+                <a href="/services/autoremont" class="mobile-mega-menu__item" onclick="closeMobileMenu()">
+                    <iconify-icon icon="mdi:wrench" aria-hidden="true"></iconify-icon>
+                    <span>Autoremont</span>
+                </a>
+                <a href="/services/summutid-keevitus" class="mobile-mega-menu__item" onclick="closeMobileMenu()">
+                    <iconify-icon icon="mdi:fire" aria-hidden="true"></iconify-icon>
+                    <span>Summuti ja Keevitustööd</span>
+                </a>
+                <a href="/services/veermik-pidurid" class="mobile-mega-menu__item" onclick="closeMobileMenu()">
+                    <iconify-icon icon="mdi:car-brake-alert" aria-hidden="true"></iconify-icon>
+                    <span>Veermiku ja Pidurite remont</span>
+                </a>
+                <a href="/services/rehvitood" class="mobile-mega-menu__item" onclick="closeMobileMenu()">
+                    <iconify-icon icon="mdi:tire" aria-hidden="true"></iconify-icon>
+                    <span>Rehvitööd</span>
+                </a>
+                <a href="/services/hooldus-diagnostika" class="mobile-mega-menu__item" onclick="closeMobileMenu()">
+                    <iconify-icon icon="mdi:car-cog" aria-hidden="true"></iconify-icon>
+                    <span>Hooldus ja Diagnostika</span>
+                </a>
+                <a href="/services/kaigukastiremont" class="mobile-mega-menu__item" onclick="closeMobileMenu()">
+                    <iconify-icon icon="mdi:car-shift-pattern" aria-hidden="true"></iconify-icon>
+                    <span>Käigukasti tööd</span>
+                </a>
+                <a href="/services/elektritood" class="mobile-mega-menu__item" onclick="closeMobileMenu()">
+                    <iconify-icon icon="mdi:lightning-bolt" aria-hidden="true"></iconify-icon>
+                    <span>Elektritööd</span>
+                </a>
+                <a href="/services/mootoriremont" class="mobile-mega-menu__item" onclick="closeMobileMenu()">
+                    <iconify-icon icon="mdi:engine" aria-hidden="true"></iconify-icon>
+                    <span>Mootori tööd</span>
+                </a>
+                <a href="/services/olivahetus" class="mobile-mega-menu__item" onclick="closeMobileMenu()">
+                    <iconify-icon icon="mdi:oil" aria-hidden="true"></iconify-icon>
+                    <span>Õli ja Filtrite vahetus</span>
+                </a>
+                <a href="/services/ostueelne-kontroll" class="mobile-mega-menu__item" onclick="closeMobileMenu()">
+                    <iconify-icon icon="mdi:file-search-outline" aria-hidden="true"></iconify-icon>
+                    <span>Enne Ostu Kontroll</span>
+                </a>
+                <a href="/services/kliimahooldus" class="mobile-mega-menu__item" onclick="closeMobileMenu()">
+                    <iconify-icon icon="mdi:snowflake" aria-hidden="true"></iconify-icon>
+                    <span>Kliima ja Konditsioneer</span>
+                </a>
+                <a href="/services/webasto-diagnostika" class="mobile-mega-menu__item" onclick="closeMobileMenu()">
+                    <iconify-icon icon="mdi:radiator" aria-hidden="true"></iconify-icon>
+                    <span>Webasto remont</span>
+                </a>
+            </div>
+
+            <a href="/meist" class="mobile-menu__link" onclick="closeMobileMenu()">Meist</a>
+            <a href="/hinnad" class="mobile-menu__link" onclick="closeMobileMenu()">Hinnad</a>
+            <a href="/kontakt" class="mobile-menu__link" onclick="closeMobileMenu()">Kontakt</a>
+            <a href="/galerii" class="mobile-menu__link" onclick="closeMobileMenu()">Galerii</a>
+            <a href="tel:+37256461210" class="mobile-menu__link mobile-menu__phone" onclick="closeMobileMenu()">5646 1210</a>
+        </nav>
+        <div class="mobile-menu__lang">
+            <a href="/" class="mobile-lang-link active">
+                <iconify-icon icon="circle-flags:ee" width="24" height="24" aria-hidden="true"></iconify-icon>
+                <span>Eesti</span>
+            </a>
+            <a href="/ru" class="mobile-lang-link">
+                <iconify-icon icon="circle-flags:ru" width="24" height="24" aria-hidden="true"></iconify-icon>
+                <span>Русский</span>
+            </a>
+            <a href="/en" class="mobile-lang-link">
+                <iconify-icon icon="circle-flags:en" width="24" height="24" aria-hidden="true"></iconify-icon>
+                <span>English</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- ========================================
+       2. HERO
+       ======================================== -->
+    <section class="hero" id="hero">
+        <div class="hero__image">
+            <img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=800&q=80"
+                alt="Автосервис Mr.Car — мастер за работой" loading="eager">
+        </div>
+        <div class="hero__content reveal">
+            <div class="hero__status">
+                Статус сервиса: Работаем
+            </div>
+            <h1 class="hero__title">Ваш авто<br>мастер.</h1>
+            <span class="hero__underline"></span>
+            <p class="hero__description body-text">Mr.Car — профессиональный автосервис. Мы ремонтируем надёжно,
+                качественно и в срок. Ваш автомобиль в надёжных руках.</p>
+            <div class="hero__actions">
+                <span class="hero__address">/// Kopli 82a, 10412 Tallinn</span>
+                <a href="/kontakt" class="hero__cta-row">
+                    <span class="hero__cta-text">Записаться на ремонт</span>
+                    <span class="hero__cta-arrow">↘</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+       3. TRUST BAR
+       ======================================== -->
+    <div class="trust-bar">
+        <div class="trust-bar__content">
+            <span>◉ Надёжный сервис в Kopli</span>
+            <span>—</span>
+            <span>◉ Гарантия на все работы</span>
+            <span>—</span>
+            <span>◉ Честные цены без сюрпризов</span>
+            <span>—</span>
+            <span>◉ Надёжный сервис в Kopli</span>
+            <span>—</span>
+            <span>◉ Гарантия на все работы</span>
+            <span>—</span>
+            <span>◉ Честные цены без сюрпризов</span>
+        </div>
+    </div>
+
+    <!-- ========================================
+       4. SERVICES OVERVIEW (Icon Anchors)
+       ======================================== -->
+    <section class="services-overview">
+        <div class="brutal-grid site-container">
+            <a href="#services" class="service-icon">
+                <svg viewBox="0 0 48 48">
+                    <path d="M10 32 L10 16 L14 16 L14 10 L34 10 L34 16 L38 16 L38 32 Z M18 32 L18 26 L30 26 L30 32" />
+                    <line x1="20" y1="18" x2="28" y2="18" />
+                </svg>
+                <span class="service-icon__label">Ремонт</span>
+            </a>
+            <a href="#services" class="service-icon">
+                <svg viewBox="0 0 48 48">
+                    <rect x="6" y="18" width="36" height="14" />
+                    <circle cx="14" cy="32" r="5" />
+                    <circle cx="34" cy="32" r="5" />
+                    <path d="M10 18 L14 10 L34 10 L38 18" />
+                </svg>
+                <span class="service-icon__label">Ходовая</span>
+            </a>
+            <a href="#services" class="service-icon">
+                <iconify-icon icon="mdi:car-shift-pattern" width="48" height="48"></iconify-icon>
+                <span class="service-icon__label">Коробка</span>
+            </a>
+            <a href="#services" class="service-icon">
+                <iconify-icon icon="mdi:engine" width="48" height="48"></iconify-icon>
+                <span class="service-icon__label">Двигатель</span>
+            </a>
+            <a href="#services" class="service-icon">
+                <svg viewBox="0 0 48 48">
+                    <circle cx="24" cy="24" r="18" />
+                    <circle cx="24" cy="24" r="12" />
+                    <circle cx="24" cy="24" r="4" />
+                    <line x1="24" y1="6" x2="24" y2="12" />
+                    <line x1="24" y1="36" x2="24" y2="42" />
+                    <line x1="6" y1="24" x2="12" y2="24" />
+                    <line x1="36" y1="24" x2="42" y2="24" />
+                </svg>
+                <span class="service-icon__label">Шиномонтаж</span>
+            </a>
+            <a href="#services" class="service-icon">
+                <svg viewBox="0 0 48 48">
+                    <path d="M30 6 L18 24 L26 24 L18 42" />
+                    <path d="M34 18 L40 18 L40 30 L34 30" />
+                </svg>
+                <span class="service-icon__label">Электрика</span>
+            </a>
+            <a href="#services" class="service-icon">
+                <svg viewBox="0 0 48 48">
+                    <circle cx="24" cy="24" r="6" />
+                    <path
+                        d="M24 4 v8 M24 36 v8 M4 24 h8 M36 24 h8 M10.3 10.3 l5.7 5.7 M32 32 l5.7 5.7 M37.7 10.3 l-5.7 5.7 M16 32 l-5.7 5.7" />
+                    <circle cx="24" cy="24" r="16" stroke-dasharray="4 4" />
+                </svg>
+                <span class="service-icon__label">Климат</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- ========================================
+       5. SERVICES — FEATURED (3 Key Cards)
+       ======================================== -->
+    <section class="services-section" id="services">
+        <div class="services-section__header site-container">
+            <h2>Полный<br>сервис.</h2>
+            <span class="services-section__subtitle">/// Гарантия качества</span>
+        </div>
+
+        <!-- 3 Featured Cards -->
+        <div class="services-grid site-container reveal">
+            <!-- Card: Полный ремонт -->
+            <div class="service-card">
+                <div class="service-card__icon">
+                    <svg viewBox="0 0 24 24">
+                        <path
+                            d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z" />
+                    </svg>
+                </div>
+                <h3 class="service-card__title">Полный ремонт</h3>
+                <p class="service-card__description">Капитальный ремонт двигателя, КПП, ходовой. От мелких
+                    неисправностей до сложных случаев — решаем любые задачи.</p>
+                <div class="service-card__footer">
+                    <span class="service-card__meta">[Статей: 04]</span>
+                    <a href="#" class="btn-link">Подробнее <span class="arrow">→</span></a>
+                </div>
+            </div>
+
+            <!-- Card: Диагностика (FEATURED — center) -->
+            <div class="service-card service-card--featured">
+                <div class="service-card__icon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                    </svg>
+                </div>
+                <h3 class="service-card__title">Диагностика</h3>
+                <p class="service-card__description">Компьютерная диагностика всех систем автомобиля. Определяем
+                    неисправности с точностью 100%. Современное оборудование.</p>
+                <div class="service-card__footer">
+                    <span class="service-card__meta">[Статей: 02]</span>
+                    <a href="#" class="btn-link">Подробнее <span class="arrow">→</span></a>
+                </div>
+            </div>
+
+            <!-- Card: Гарантия -->
+            <div class="service-card">
+                <div class="service-card__icon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                    </svg>
+                </div>
+                <h3 class="service-card__title">Гарантия</h3>
+                <p class="service-card__description">Даём гарантию на все виды работ. Используем только оригинальные
+                    запчасти и качественные аналоги от проверенных производителей.</p>
+                <span class="service-card__badge">Гарантия &gt; 12 мес</span>
+                <div class="service-card__footer">
+                    <span class="service-card__meta">[Статей: 01]</span>
+                    <a href="#" class="btn-link">Подробнее <span class="arrow">→</span></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- All 12 Services — Compact Grid -->
+        <div class="services-all site-container">
+            <div class="services-all__grid">
+                <a href="#" class="services-all__item">
+                    <span class="services-all__number">[01]</span>
+                    <span class="services-all__name">Autoremont</span>
+                    <span class="services-all__arrow">→</span>
+                </a>
+                <a href="#" class="services-all__item">
+                    <span class="services-all__number">[02]</span>
+                    <span class="services-all__name">Глушитель и сварка</span>
+                    <span class="services-all__arrow">→</span>
+                </a>
+                <a href="#" class="services-all__item">
+                    <span class="services-all__number">[03]</span>
+                    <span class="services-all__name">Ходовая и тормоза</span>
+                    <span class="services-all__arrow">→</span>
+                </a>
+                <a href="#" class="services-all__item">
+                    <span class="services-all__number">[04]</span>
+                    <span class="services-all__name">Шиномонтаж</span>
+                    <span class="services-all__arrow">→</span>
+                </a>
+                <a href="#" class="services-all__item">
+                    <span class="services-all__number">[05]</span>
+                    <span class="services-all__name">ТО и диагностика</span>
+                    <span class="services-all__arrow">→</span>
+                </a>
+                <a href="#" class="services-all__item">
+                    <span class="services-all__number">[06]</span>
+                    <span class="services-all__name">Замена фильтров</span>
+                    <span class="services-all__arrow">→</span>
+                </a>
+                <a href="#" class="services-all__item">
+                    <span class="services-all__number">[07]</span>
+                    <span class="services-all__name">Электрика</span>
+                    <span class="services-all__arrow">→</span>
+                </a>
+                <a href="#" class="services-all__item">
+                    <span class="services-all__number">[08]</span>
+                    <span class="services-all__name">Мотор и КПП</span>
+                    <span class="services-all__arrow">→</span>
+                </a>
+                <a href="#" class="services-all__item">
+                    <span class="services-all__number">[09]</span>
+                    <span class="services-all__name">Замена масла</span>
+                    <span class="services-all__arrow">→</span>
+                </a>
+                <a href="#" class="services-all__item">
+                    <span class="services-all__number">[10]</span>
+                    <span class="services-all__name">Проверка перед покупкой</span>
+                    <span class="services-all__arrow">→</span>
+                </a>
+                <a href="#" class="services-all__item">
+                    <span class="services-all__number">[11]</span>
+                    <span class="services-all__name">Климат и кондиционер</span>
+                    <span class="services-all__arrow">→</span>
+                </a>
+                <a href="#" class="services-all__item">
+                    <span class="services-all__number">[12]</span>
+                    <span class="services-all__name">Webasto</span>
+                    <span class="services-all__arrow">→</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ========================================
+       7. GALLERY
+       ======================================== -->
+    <section class="gallery-section" id="gallery">
+        <div class="gallery__header site-container reveal">
+            <h2>Наши работы</h2>
+            <a href="/ru/galereya" class="gallery__index">Смотреть галерею</a>
+        </div>
+        <div class="gallery__images site-container reveal">
+            <div class="gallery__item">
+                <img src="homepage_pics/lowkey_portfolio_1_1771547397632.avif" alt="Mootori remont Mr.Car-is"
+                    loading="lazy">
+            </div>
+            <div class="gallery__item">
+                <img src="homepage_pics/lowkey_portfolio_2_1771547415128.avif" alt="Auto diagnostika" loading="lazy">
+            </div>
+            <div class="gallery__item">
+                <img src="homepage_pics/lowkey_portfolio_3_1771547430620.avif" alt="Mr.Car töökoda seest"
+                    loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+       8. TEAM
+       ======================================== -->
+    <section class="team-section" id="team">
+        <div class="team__header site-container">
+            <span class="meta text-accent">/// Наши мастера</span>
+            <h2 style="margin-top: var(--space-sm);">Команда</h2>
+        </div>
+        <div class="team-grid site-container reveal">
+            <div class="team-card">
+                <div class="team-card__image">
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80" alt="Мастер-механик"
+                        loading="lazy">
+                </div>
+                <div class="team-card__info">
+                    <div class="team-card__name">Алексей К.</div>
+                    <div class="team-card__role">Мастер-механик</div>
+                    <div class="team-card__details">
+                        Специализация: двигатели, КПП<br>
+                        Опыт: 15+ лет
+                    </div>
+                </div>
+            </div>
+            <div class="team-card">
+                <div class="team-card__image">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80"
+                        alt="Электрик-диагност" loading="lazy">
+                </div>
+                <div class="team-card__info">
+                    <div class="team-card__name">Дмитрий С.</div>
+                    <div class="team-card__role">Электрик-диагност</div>
+                    <div class="team-card__details">
+                        Специализация: электрика, диагностика<br>
+                        Опыт: 10+ лет
+                    </div>
+                </div>
+            </div>
+            <div class="team-card">
+                <div class="team-card__image">
+                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80"
+                        alt="Мастер по ходовой" loading="lazy">
+                </div>
+                <div class="team-card__info">
+                    <div class="team-card__name">Сергей В.</div>
+                    <div class="team-card__role">Мастер по ходовой</div>
+                    <div class="team-card__details">
+                        Специализация: подвеска, тормоза<br>
+                        Опыт: 12+ лет
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+       9. PRICING TEASER
+       ======================================== -->
+    <section class="pricing-section" id="pricing">
+        <div class="site-container">
+            <div class="section-header">
+                <span class="meta text-accent">/// Прозрачные цены</span>
+                <h2>Популярные услуги</h2>
+            </div>
+        </div>
+
+        <div class="pricing-grid site-container reveal">
+            <div class="pricing-item">
+                <span class="pricing-item__service">Замена масла</span>
+                <span class="pricing-item__price">от €45</span>
+                <span class="pricing-item__note">Масло + фильтр</span>
+            </div>
+            <div class="pricing-item">
+                <span class="pricing-item__service">Диагностика</span>
+                <span class="pricing-item__price">от €40</span>
+                <span class="pricing-item__note">Компьютерная диагностика</span>
+            </div>
+            <div class="pricing-item">
+                <span class="pricing-item__service">Шиномонтаж</span>
+                <span class="pricing-item__price">от €20</span>
+                <span class="pricing-item__note">За одно колесо</span>
+            </div>
+        </div>
+
+        <div class="pricing__cta-wrapper">
+            <a href="https://mrcar-473416.web.app/hinnad" class="btn btn-secondary">Полный прайс <iconify-icon
+                    icon="mdi:arrow-top-right" width="16" height="16" aria-hidden="true"
+                    class="btn__icon"></iconify-icon></a>
+        </div>
+    </section>
+
+    <!-- ========================================
+       10. CONTACT FORM
+       ======================================== -->
+    <section class="contact-section" id="contact">
+        <div class="container site-container">
+            <span class="meta text-accent">/// Запись на ремонт</span>
+        </div>
+        <div class="contact-grid site-container reveal">
+            <div class="contact__info">
+                <h2>Записаться<br>на ремонт.</h2>
+                <p class="contact__promise">Оставьте заявку — перезвоним в течение 30 минут в рабочее время.</p>
+                <div class="accent-underline"></div>
+                <p class="contact__alt">Или позвоните: <a href="tel:+3725646121">+372 5646 1210</a></p>
+            </div>
+            <div class="contact__form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Имя</label>
+                        <input type="text" id="name" name="name" placeholder="Как вас зовут" required>
+                        <span class="form-error" id="nameError"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Телефон</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+372 ..." required>
+                        <span class="form-error" id="phoneError"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="car">Марка и модель авто (необязательно)</label>
+                        <input type="text" id="car" name="car" placeholder="Например: VW Golf 2019">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Комментарий (необязательно)</label>
+                        <textarea id="message" name="message" placeholder="Опишите проблему или вид работ"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary"
+                        style="width: 100%; justify-content: center;">Отправить заявку <span
+                            class="arrow">↗</span></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+       11. MAP + LOCATION
+       ======================================== -->
+    <section class="location-section" id="location">
+        <div class="location-grid site-container reveal">
+            <div class="location__info">
+                <div>
+                    <span class="meta text-accent">/// Как нас найти</span>
+                    <h2 style="margin-top: var(--space-sm);">Мы рядом.</h2>
+                </div>
+                <div class="location__detail">
+                    <span class="location__label">Адрес</span>
+                    <span class="location__value">Kopli 82a, 10412 Tallinn</span>
+                </div>
+                <div class="location__detail">
+                    <span class="location__label">Часы работы</span>
+                    <span class="location__value">E–R: 09:00 – 18:00</span>
+                    <span class="location__value" style="color: var(--text-dimmed);">L–P: Suletud</span>
+                </div>
+                <div class="location__detail">
+                    <span class="location__label">Телефон</span>
+                    <a href="tel:+3725646121" class="location__value" style="color: var(--accent-primary);">+372 5646
+                        1210</a>
+                </div>
+                <div class="location__detail">
+                    <span class="location__label">Email</span>
+                    <a href="mailto:info@mrcar.ee" class="location__value">info@mrcar.ee</a>
+                </div>
+                <a href="https://maps.google.com/?q=Kopli+82a+Tallinn" target="_blank" rel="noopener"
+                    class="btn btn-secondary">Построить маршрут <span class="arrow">↗</span></a>
+            </div>
+            <div class="location__map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2028.9!2d24.7367!3d59.4428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469294a73d8b6a69%3A0x4e7e0e6e7e6e7e6e!2sKopli+82a%2C+Tallinn!5e0!3m2!1set!2see!4v1600000000000!5m2!1set!2see"
+                    allowfullscreen loading="lazy" title="Mr.Car на карте"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+       12. FOOTER
+       ======================================== -->
+    <footer class="footer">
+    <div class="footer-grid site-container">
+      <div>
+        <div class="footer__col-title">Kontaktid</div>
+        <div class="footer__text">
+          <a href="tel:+37256461210">5646 1210</a><br>
+          <a href="mailto:info@mrcar.ee">info@mrcar.ee</a><br>
+          Kopli 82a, 10412 Tallinn
+        </div>
+        <div class="footer__socials">
+          <a href="https://www.facebook.com/" class="footer__social-link" aria-label="Facebook" target="_blank" rel="noopener">
+            <iconify-icon icon="mdi:facebook" aria-hidden="true"></iconify-icon>
+          </a>
+          <a href="https://www.instagram.com/" class="footer__social-link" aria-label="Instagram" target="_blank" rel="noopener">
+            <iconify-icon icon="mdi:instagram" aria-hidden="true"></iconify-icon>
+          </a>
+        </div>
+      </div>
+      <div>
+        <div class="footer__col-title">Rekvisiidid</div>
+        <div class="footer__text footer__text--rekvisiidid">
+          ANET EESTI OÜ<br>
+          Reg. nr: 10233521<br>
+          KMKR: EE100321511<br>
+          LHV: EE54 7700 7710 0969 0559<br>
+          SEB: EE10 1010 0520 0108 4005
+        </div>
+      </div>
+      <div>
+        <div class="footer__col-title">Lahtiolekuajad</div>
+        <div class="footer__text">
+          Esmaspäev – Reede<br>
+          <strong style="color: var(--text-main);">09:00 – 18:00</strong><br><br>
+          Laupäev – Pühapäev<br>
+          <span style="color: var(--text-dimmed);">Suletud</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 Mr.Car Autoremont Tallinn</span>
+      <a href="/tingimused">Üldtingimused</a>
+      <a href="/privaatsus">Privaatsuspoliitika</a>
+      <span>Designed by <a href="https://agentica.ee" target="_blank" rel="noopener">Agentica</a></span>
+    </div>
+  </footer>
+
+    <!-- ========================================
+       SCRIPTS
+       ======================================== -->
+    <script>
+        // Mobile menu
+        const burger = document.getElementById('burgerBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const closeBtn = document.getElementById('closeMenu');
+
+        burger.addEventListener('click', () => {
+            mobileMenu.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+
+        closeBtn.addEventListener('click', closeMobileMenu);
+
+        function closeMobileMenu() {
+            mobileMenu.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        let lastScroll = 0;
+
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.scrollY;
+            if (currentScroll > 100) {
+                navbar.style.borderBottomColor = 'var(--accent-primary)';
+            } else {
+                navbar.style.borderBottomColor = '';
+            }
+            lastScroll = currentScroll;
+        });
+        // Form handling
+        const contactForm = document.getElementById('contactForm');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function (e) {
+                e.preventDefault();
+                const btn = this.querySelector('button[type="submit"]');
+                const originalText = btn.innerHTML;
+                btn.disabled = true;
+                btn.innerHTML = 'Отправка...';
+
+                setTimeout(() => {
+                    showSnackbar();
+                    contactForm.reset();
+                    btn.disabled = false;
+                    btn.innerHTML = originalText;
+                }, 1000);
+            });
+        }
+
+        function showSnackbar() {
+            var x = document.getElementById("snackbar");
+            x.className = "snackbar show";
+            setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
+        }
+
+        // Scroll Reveal
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: "0px 0px -50px 0px"
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+
+    <!-- Snackbar Component -->
+    <div id="snackbar" class="snackbar">Заявка отправлена успешно!</div>
+
+</body>
+
+</html>
